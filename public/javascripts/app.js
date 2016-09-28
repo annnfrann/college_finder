@@ -10,4 +10,8 @@ app.config(function($routeProvider) {
         templateUrl: 'views/anna.html',
         controller: 'collegeController'
       })
+      .when('/pirates', {
+        templateUrl: 'views/anna.html',
+        controller: 'piratesController'
+      })
 });
