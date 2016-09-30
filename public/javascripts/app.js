@@ -3,11 +3,35 @@ var app = angular.module("college_finder", ['ngRoute'])
 app.config(function($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/anna.html',
+        templateUrl: 'views/landing.html',
         controller: 'annaController'
       })
-      .when('/anna', {
-        templateUrl: 'views/anna.html',
+      .when('/studentinfo', {
+        templateUrl: 'views/demographics.html',
+        controller: 'annaController'
+      })
+      .when('/sport', {
+        templateUrl: 'views/sport.html',
+        controller: 'annaController'
+      })
+      .when('/division', {
+        templateUrl: 'views/division.html',
+        controller: 'annaController'
+      })
+      .when('/enrollment', {
+        templateUrl: 'views/enrollment.html',
+        controller: 'collegeController'
+      })
+      .when('/admissions', {
+        templateUrl: 'views/admissions.html',
+        controller: 'collegeController'
+      })
+      .when('/location', {
+        templateUrl: 'views/location.html',
+        controller: 'collegeController'
+      })
+      .when('/results', {
+        templateUrl: 'views/results.html',
         controller: 'collegeController'
       })
       .when('/pirates', {
