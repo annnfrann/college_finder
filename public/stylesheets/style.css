@@ -94,3 +94,6 @@ table, th, td, .landingButton{
   background: white;
   color: #a9a9a9;
 }
+table{
+  margin-top: 3%;
+}

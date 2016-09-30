@@ -7,6 +7,7 @@ app.config(function($routeProvider) {
         controller: 'annaController'
       })
       .when('/studentinfo', {
+        // add in an if to handle whether or not someone is signed in
         templateUrl: 'views/demographics.html',
         controller: 'annaController'
       })
