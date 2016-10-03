@@ -6,6 +6,10 @@ app.config(function($routeProvider) {
         templateUrl: 'views/landing.html',
         controller: 'annaController'
       })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'annaController'
+      })
       .when('/studentinfo', {
         // add in an if to handle whether or not someone is signed in
         templateUrl: 'views/demographics.html',
