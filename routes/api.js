@@ -15,8 +15,22 @@ router.get('/', function(req, res, next){
 })
 router.get('/names', function(req, res, next){
   Queries.names().then(function(college_names){
-    console.log(college_names);
     res.json(college_names)
+  })
+})
+router.get('/states', function(req, res, next){
+  Queries.states().then(function(college_states){
+    res.json(college_states)
+  })
+})
+router.get('/enrollment', function(req, res, next){
+  Queries.enrollment().then(function(enrollment){
+    res.json(enrollment)
+  })
+})
+router.get('/selectivity', function(req, res, next){
+  Queries.enrollment().then(function(selectivity){
+    res.json(selectivity)
   })
 })
 

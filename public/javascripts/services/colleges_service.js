@@ -3,9 +3,17 @@ app.factory('colleges_service', function ($http) {
     all: function() {
       return $http.get('/api/colleges');
     },
-
     names: function(){
       return $http.get('/api/colleges/names')
+    },
+    states: function(){
+      return $http.get('api/colleges/states')
+    },
+    enrollment: function(){
+      return $http.get('api/colleges/enrollment')
+    },
+    selectivity: function(){
+      $http.get('api/colleges/selectivity')
     }
   }
 })
