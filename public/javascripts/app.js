@@ -39,8 +39,8 @@ app.config(function($routeProvider) {
         templateUrl: 'views/results.html',
         controller: 'collegeController'
       })
-      .when('/pirates', {
+      .when('/colleges', {
         templateUrl: 'views/anna.html',
-        controller: 'piratesController'
+        controller: 'collegeController'
       })
 });

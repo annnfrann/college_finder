@@ -9,8 +9,14 @@ var Queries = require('../lib/queries')
 // });
 
 router.get('/', function(req, res, next){
-  Queries.all().then(function(pirates){
-    res.json(pirates)
+  Queries.all().then(function(colleges){
+    res.json(colleges)
+  })
+})
+router.get('/names', function(req, res, next){
+  Queries.names().then(function(college_names){
+    console.log(college_names);
+    res.json(college_names)
   })
 })
 
