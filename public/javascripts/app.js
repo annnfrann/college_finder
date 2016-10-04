@@ -1,4 +1,4 @@
-var app = angular.module("college_finder", ['ngRoute'])
+var app = angular.module("college_finder", ['ngRoute', 'angular.filter'])
 
 app.config(function($routeProvider) {
     $routeProvider
@@ -21,7 +21,7 @@ app.config(function($routeProvider) {
       })
       .when('/division', {
         templateUrl: 'views/division.html',
-        controller: 'annaController'
+        controller: 'divisionController'
       })
       .when('/enrollment', {
         templateUrl: 'views/enrollment.html',
