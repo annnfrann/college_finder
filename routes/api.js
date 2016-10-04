@@ -28,9 +28,9 @@ router.get('/enrollment', function(req, res, next){
     res.json(enrollment)
   })
 })
-router.get('/selectivity', function(req, res, next){
-  Queries.enrollment().then(function(selectivity){
-    res.json(selectivity)
+router.get('/admissions', function(req, res, next){
+  Queries.admissions().then(function(admissions){
+    res.json(admissions)
   })
 })
 router.get('/mensSports', function(req, res, next){

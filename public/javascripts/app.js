@@ -13,11 +13,11 @@ app.config(function($routeProvider) {
       .when('/studentinfo', {
         // add in an if to handle whether or not someone is signed in
         templateUrl: 'views/demographics.html',
-        controller: 'annaController'
+        controller: 'studentController'
       })
       .when('/sport', {
         templateUrl: 'views/sport.html',
-        controller: 'annaController'
+        controller: 'sportController'
       })
       .when('/division', {
         templateUrl: 'views/division.html',
@@ -25,19 +25,19 @@ app.config(function($routeProvider) {
       })
       .when('/enrollment', {
         templateUrl: 'views/enrollment.html',
-        controller: 'collegeController'
+        controller: 'enrollmentController'
       })
       .when('/admissions', {
         templateUrl: 'views/admissions.html',
-        controller: 'collegeController'
+        controller: 'admissionsController'
       })
       .when('/location', {
         templateUrl: 'views/location.html',
-        controller: 'collegeController'
+        controller: 'locationController'
       })
       .when('/results', {
         templateUrl: 'views/results.html',
-        controller: 'collegeController'
+        controller: 'resultsController'
       })
       .when('/colleges', {
         templateUrl: 'views/anna.html',

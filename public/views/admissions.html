@@ -4,7 +4,7 @@
     <label for="selectivity"></label>
       <select ng-model="selectivity" id="selectivity">
         <option value="" disabled selected style="display: none;">how competitive</option>
-        <option ng-repeat="school in view.names"  value="option">{{school.college_name}}</option>
+        <option ng-repeat="competetiveness in view.admissions | unique:'competetiveness'"  value="option">{{competetiveness.selectivity}}</option>
       </select>
       <br><br><br><br>
       <a href="#/location"><input class="button-primary" type="submit" value="next"></a>

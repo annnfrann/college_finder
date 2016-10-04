@@ -12,8 +12,8 @@ app.factory('colleges_service', function ($http) {
     enrollment: function(){
       return $http.get('api/colleges/enrollment')
     },
-    selectivity: function(){
-      return $http.get('api/colleges/selectivity')
+    admissions: function(){
+      return $http.get('api/colleges/admissions')
     },
     mensSports: function(){
       return $http.get('api/colleges/mensSports')
