@@ -14,6 +14,12 @@ app.factory('colleges_service', function ($http) {
     },
     selectivity: function(){
       $http.get('api/colleges/selectivity')
+    },
+    mensSports: function(){
+      $http.get('api/colleges/mensSports')
+    },
+    womensSports: function(){
+      $http.get('api/colleges/womensSports')
     }
   }
 })

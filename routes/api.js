@@ -33,5 +33,15 @@ router.get('/selectivity', function(req, res, next){
     res.json(selectivity)
   })
 })
+router.get('/mensSports', function(req, res, next){
+  Queries.mensSports().then(function(mensSports){
+    res.json(mensSports)
+  })
+})
+router.get('/womensSports', function(req, res, next){
+  Queries.womensSports().then(function(womensSports){
+    res.json(womensSports)
+  })
+})
 
 module.exports = router;
