@@ -43,5 +43,10 @@ router.get('/womensSports', function(req, res, next){
     res.json(womensSports)
   })
 })
+router.get('/division', function(req, res, next){
+  Queries.division().then(function(division){
+    res.json(division)
+  })
+})
 
 module.exports = router;

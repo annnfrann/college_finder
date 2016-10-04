@@ -2,11 +2,9 @@
 <div class="schoolSelectivity">
   <form id="schoolSelectivity">
     <label for="selectivity"></label>
-      <select id="selectivity">
+      <select ng-model="selectivity" id="selectivity">
         <option value="" disabled selected style="display: none;">how competitive</option>
-        <!-- ng-repeat through selectivity values -->
-        <option value="male">male</option>
-        <option value="female">female</option>
+        <option ng-repeat="school in view.names"  value="option">{{school.college_name}}</option>
       </select>
       <br><br><br><br>
       <a href="#/location"><input class="button-primary" type="submit" value="next"></a>

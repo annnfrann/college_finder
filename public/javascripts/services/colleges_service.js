@@ -13,13 +13,16 @@ app.factory('colleges_service', function ($http) {
       return $http.get('api/colleges/enrollment')
     },
     selectivity: function(){
-      $http.get('api/colleges/selectivity')
+      return $http.get('api/colleges/selectivity')
     },
     mensSports: function(){
-      $http.get('api/colleges/mensSports')
+      return $http.get('api/colleges/mensSports')
     },
     womensSports: function(){
-      $http.get('api/colleges/womensSports')
+      return $http.get('api/colleges/womensSports')
+    },
+    division: function(){
+      return $http.get('api/colleges/division')
     }
   }
 })

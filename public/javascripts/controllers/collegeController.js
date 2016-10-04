@@ -9,6 +9,6 @@ app.controller('collegeController', function($scope, colleges_service){
     $scope.view.names = collegeNames.data.rows
   })
   colleges_service.mensSports().then(function(mensSports){
-    $scope.view.dudes = mensSports.data.rows
+    $scope.view.dudes = mensSports.data
   })
 })
