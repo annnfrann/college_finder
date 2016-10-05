@@ -48,5 +48,11 @@ router.get('/division', function(req, res, next){
     res.json(division)
   })
 })
+router.get('/test', function(req, res, next){
+  Queries.testBig().then(function(results){
+    console.log("test");
+    res.json(results)
+  })
+})
 
 module.exports = router;
