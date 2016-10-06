@@ -49,7 +49,7 @@ router.get('/division', function(req, res, next){
   })
 })
 router.get('/test', function(req, res, next){
-  Queries.getEnrollment(3).then(function(results){
+  Queries.getResults(1500, 2000, 3, "competetive", "Michigan").then(function(results){
     res.json(results)
   })
 })
