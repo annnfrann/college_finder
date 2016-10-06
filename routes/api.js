@@ -49,8 +49,7 @@ router.get('/division', function(req, res, next){
   })
 })
 router.get('/test', function(req, res, next){
-  Queries.testBig().then(function(results){
-    console.log("test");
+  Queries.getEnrollment(3).then(function(results){
     res.json(results)
   })
 })
