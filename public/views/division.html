@@ -2,15 +2,12 @@
 <div class="studentDivision">
   <form id="studentDivision">
     <label for="division"></label>
-      <select ng-model="division" id="division">
+      <select ng-model="view.chosenDivision" id="division">
         <option value="" disabled selected style="display: none;">select your division</option>
-        <option ng-repeat="division in view.division | unique: 'division'" value="option">{{division.division}}</option>
-        <!-- ng-repeat through divisions that correspond with previously selected gender and sport -->
-        <!-- <option value="male">male</option>
-        <option value="female">female</option> -->
+        <option ng-repeat="division in view.divisions | unique: 'division'" value="{{division.id}}">{{division.division}}</option>
       </select>
       <br><br><br><br>
-      <a href="#/enrollment"><input class="button-primary" type="submit" value="next"></a>
+      <a href="#/enrollment" ng-click="getDivision(view.chosenDivision)"><input class="button-primary" type="submit" value="next"></a>
   </form>
 </div>
 <div class="tile opacity3">
