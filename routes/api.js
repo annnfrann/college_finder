@@ -13,11 +13,11 @@ router.get('/', function(req, res, next){
     res.json(colleges)
   })
 })
-router.get('/names', function(req, res, next){
-  Queries.names().then(function(college_names){
-    res.json(college_names)
-  })
-})
+// router.get('/names', function(req, res, next){
+//   Queries.names().then(function(college_names){
+//     res.json(college_names)
+//   })
+// })
 // router.get('/states', function(req, res, next){
 //   Queries.states().then(function(college_states){
 //     res.json(college_states)
@@ -28,11 +28,11 @@ router.get('/names', function(req, res, next){
 //     res.json(enrollment)
 //   })
 // })
-router.get('/admissions', function(req, res, next){
-  Queries.admissions().then(function(admissions){
-    res.json(admissions)
-  })
-})
+// router.get('/admissions', function(req, res, next){
+//   Queries.admissions().then(function(admissions){
+//     res.json(admissions)
+//   })
+// })
 // router.get('/mensSports', function(req, res, next){
 //   Queries.mensSports().then(function(mensSports){
 //     res.json(mensSports)

@@ -15,13 +15,13 @@
       <input type="date" name="birthday">
     <br><br>
     <label for="gender"></label>
-      <select id="gender" ng-model="gender">
+      <select id="gender" ng-model="view.gender" required>
         <option value="" disabled selected style="display: none;">gender</option>
         <option value="male">male</option>
         <option value="female">female</option>
       </select>
       <br><br><br>
-      <a href="#/sport"><input class="button-primary" type="submit" value="next"></a>
+      <a href="#/sport" ng-click = "getGender(view.gender)"><input class="button-primary" type="submit" value="next"></a>
   </form>
 </div>
 <div class="tile opacity1">
