@@ -2,14 +2,13 @@
 <div class="schoolLocation">
   <form id="schoolLocation">
     <label for="location"></label>
-      <select id="location">
-        <option value="" disabled selected style="display: none;">us region</option>
+      <select ng-model = "view.location" id="location">
+        <option value="" disabled selected style="display: none;">location</option>
+        <option ng-repeat="location in view.locations" value="{{location}}">{{location}}</option>
         <!-- display interactive us map with different geographical regions -->
-        <option value="male">male</option>
-        <option value="female">female</option>
       </select>
       <br><br><br><br>
-      <a href="#/results"><input class="button-primary" type="submit" value="get results"></a>
+      <a href="#/results" ng-click="getLocation(view.location)"><input class="button-primary" type="submit" value="get results"></a>
   </form>
 </div>
 <div class="tile opacity6">

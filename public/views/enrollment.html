@@ -3,38 +3,39 @@
   <form id="enrollmentSize">
     <label for="lowerEnrollment"></label>
       <select ng-model="view.lowerEnrollment" id="lowerEnrollment">
-        <option value="" disabled selected style="display: none;">select your preferred school size</option>
-        <!-- hard coded different enrollment ranges -->
-        <option value="male">0</option>
-        <option value="female">1000</option>
-        <option value="female">2500</option>
-        <option value="female">5,000</option>
-        <option value="female">7,500</option>
-        <option value="female">10,000</option>
-        <option value="female">12,500</option>
-        <option value="female">15,000</option>
-        <option value="female">17,500</option>
-        <option value="female">20,000</option>
-        <option value="female">22,500</option>
+        <option value="" disabled selected style="display: none;">select your smallest school size</option>
+        <option value="0">0</option>
+        <option value="1000">1000</option>
+        <option value="2500">2500</option>
+        <option value="5000">5,000</option>
+        <option value="7500">7,500</option>
+        <option value="10000">10,000</option>
+        <option value="12500">12,500</option>
+        <option value="15000">15,000</option>
+        <option value="17500">17,500</option>
+        <option value="20000">20,000</option>
+        <option value="22500">22,500</option>
       </select>
     <label for="upperEnrollment"></label>
       <select ng-model="view.upperEnrollment" id="upperEnrollment">
-        <option value="" disabled selected style="display: none;">select your preferred school size</option>
-        <!-- hard coded different enrollment ranges -->
-        <option value="male">1000</option>
-        <option value="female">2,500</option>
-        <option value="female">5,000</option>
-        <option value="female">7,500</option>
-        <option value="female">10,000</option>
-        <option value="female">12,500</option>
-        <option value="female">15,000</option>
-        <option value="female">17,500</option>
-        <option value="female">20,000</option>
-        <option value="female">22,500</option>
-        <option value="female">25,000</option>
+        <option value="" disabled selected style="display: none;">select your largest school size</option>
+        <option value="1000">1000</option>
+        <option value="2500">2,500</option>
+        <option value="5000">5,000</option>
+        <option value="7500">7,500</option>
+        <option value="10000">10,000</option>
+        <option value="12500">12,500</option>
+        <option value="15000">15,000</option>
+        <option value="17500">17,500</option>
+        <option value="20000">20,000</option>
+        <option value="22500">22,500</option>
+        <option value="25000">25,000</option>
       </select>
       <br><br><br><br>
-      <a href="#/admissions"><input class="button-primary" type="submit" value="next"></a>
+
+      <!-- ng-show on the button if view.lowerEnrollment < view.upperEnrollment and if view.lowerEnrollment > view.upperEnrollment show something that says please make sure your smallest desired enrollment is less than your greates desired enrollment -->
+
+      <a href="#/admissions" ng-click="getEnrollment(view.lowerEnrollment, view.upperEnrollment)"><input class="button-primary" type="submit" value="next"></a>
   </form>
 </div>
 <div class="tile opacity4">

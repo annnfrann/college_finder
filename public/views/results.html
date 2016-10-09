@@ -12,47 +12,14 @@
       </tr>
     </thead>
     <tbody>
-      <!-- ng-repeat through result data -->
       <!-- consider adding an option to save results -->
-      <tr>
-        <td>University of Tennessee</td>
-        <td>Knoxville</td>
-        <td>Tennessee</td>
-        <td>utk.edu</td>
-        <td>athletics.utk.edu</td>
-        <td>27,845</td>
-      </tr>
-      <tr>
-        <td>University of Tennessee</td>
-        <td>Knoxville</td>
-        <td>Tennessee</td>
-        <td>utk.edu</td>
-        <td>athletics.utk.edu</td>
-        <td>27,845</td>
-      </tr>
-      <tr>
-        <td>University of Tennessee</td>
-        <td>Knoxville</td>
-        <td>Tennessee</td>
-        <td>utk.edu</td>
-        <td>athletics.utk.edu</td>
-        <td>27,845</td>
-      </tr>
-      <tr>
-        <td>University of Tennessee</td>
-        <td>Knoxville</td>
-        <td>Tennessee</td>
-        <td>utk.edu</td>
-        <td>athletics.utk.edu</td>
-        <td>27,845</td>
-      </tr>
-      <tr>
-        <td>University of Tennessee</td>
-        <td>Knoxville</td>
-        <td>Tennessee</td>
-        <td>utk.edu</td>
-        <td>athletics.utk.edu</td>
-        <td>27,845</td>
+      <tr ng-repeat = 'college in view.results'>
+        <td>{{college.college_name}}</td>
+        <td>{{college.city}}</td>
+        <td>{{college.state}}</td>
+        <td>{{college.website}}</td>
+        <td>{{college.athletics_website}}</td>
+        <td>{{college.enrollment}}</td>
       </tr>
     </tbody>
   </table>

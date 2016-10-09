@@ -2,12 +2,12 @@
 <div class="schoolSelectivity">
   <form id="schoolSelectivity">
     <label for="selectivity"></label>
-      <select ng-model="selectivity" id="selectivity">
+      <select ng-model="view.selectivity" id="selectivity">
         <option value="" disabled selected style="display: none;">how competitive</option>
-        <option ng-repeat="competetiveness in view.admissions | unique:'competetiveness'"  value="option">{{competetiveness.selectivity}}</option>
+        <option ng-repeat="selectivities in view.selectivities | unique:'selectivities'"  value="{{selectivities}}">{{selectivities}}</option>
       </select>
       <br><br><br><br>
-      <a href="#/location"><input class="button-primary" type="submit" value="next"></a>
+      <a href="#/location" ng-click="getSelectivity(view.selectivity)"><input class="button-primary" type="submit" value="next"></a>
   </form>
 </div>
 <div class="tile opacity5">

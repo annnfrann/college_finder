@@ -41,7 +41,7 @@ app.factory('colleges_service', function ($http) {
       return $http.get('api/colleges/location/' + lowerEnrollment + '/' + upperEnrollment + '/' + sportId + '/' + selectivity)
     },
     getResults: function(lowerEnrollment, upperEnrollment, sportId, selectivity, state){
-      return $http.get('api/colleges/results/' + owerEnrollment + '/' + upperEnrollment + '/' + sportId + '/' + selectivity + '/' + state)
+      return $http.get('api/colleges/results/' + lowerEnrollment + '/' + upperEnrollment + '/' + sportId + '/' + selectivity + '/' + state)
     }
   }
 })
