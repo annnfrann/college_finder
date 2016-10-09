@@ -90,6 +90,12 @@ form{
 .opacity7{
   opacity: 0.70;
 }
+.alert{
+  color: #E65933;
+  font-size: 1.25em;
+  width: 100%;
+  text-align: center;
+}
 table, th, td, .landingButton{
   background: white;
   color: #a9a9a9;
