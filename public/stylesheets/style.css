@@ -66,29 +66,39 @@ form{
   width: 75%;
   border-radius: 5%;
 }
+.schoolLocation{
+  padding: 2%;
+}
 .opacity1{
   opacity: 0.10;
+  z-index: -999;
 }
 #sport, #division, #enrollment, #selectivity, #location, #results{
   margin-top: 10%;
 }
 .opacity2{
   opacity: 0.20;
+  z-index: -999;
 }
 .opacity3{
   opacity: 0.30;
+  z-index: -999;
 }
 .opacity4{
   opacity: 0.40;
+  z-index: -999;
 }
 .opacity5{
   opacity: 0.50;
+  z-index: -999;
 }
 .opacity6{
   opacity: 0.60;
+  z-index: -999;
 }
 .opacity7{
   opacity: 0.70;
+  z-index: -999;
 }
 .alert{
   color: #E65933;
@@ -103,8 +113,13 @@ table, th, td, .landingButton{
 table{
   margin-top: 3%;
 }
-
+.resultsButton{
+  margin-left: 2%;
+  /*margin-top: -10%;*/
+  /*margin-bottom: 2%;*/
+}
 #chartdiv {
   width: 100%;
   height: 500px;
+  margin-top: 2%;
 }

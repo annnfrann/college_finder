@@ -1,15 +1,18 @@
 <h3>choose your region:</h3>
 <div class="schoolLocation">
-  <form id="schoolLocation">
-    <label for="location"></label>
-      <select ng-model = "view.location" id="location">
-        <option value="" disabled selected style="display: none;">location</option>
-        <option ng-repeat="location in view.locations" value="{{location}}">{{location}}</option>
+  <!-- <form id="schoolLocation"> -->
+    <div id="chartdiv"></div>
+
+    <br><br>
+    <!-- <label for="location"></label> -->
+      <!-- <select ng-model = "view.location" id="location"> -->
+        <!-- <option value="" disabled selected style="display: none;">location</option> -->
+        <!-- <option ng-repeat="location in view.locations" value="{{location}}">{{location}}</option> -->
         <!-- display interactive us map with different geographical regions -->
-      </select>
-      <br><br><br><br>
-      <a href="#/results" ng-click="getLocation(view.location)"><input class="button-primary" type="submit" value="get results"></a>
-  </form>
+      <!-- </select> -->
+
+      <a href="#/results" ng-click="getLocation(view.location)" class="resultsButton"><input class="button-primary" type="submit" value="get results"></a>
+  <!-- </form> -->
 </div>
-<div class="tile opacity6">
-</div>
+<!-- <div class="tile opacity6">
+</div> -->
