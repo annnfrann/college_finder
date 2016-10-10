@@ -54,7 +54,7 @@ app.controller('locationController', function($scope, colleges_service){
           }
         }
         //console.log(states);
-        $scope.view.selection = states;
+        $scope.view.selection = states.join('.');
 
         $scope.$apply(function(){
             console.log(`Selected ${$scope.view.selection}`);

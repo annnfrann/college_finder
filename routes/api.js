@@ -74,7 +74,7 @@ router.get('/location/:lowerEnrollment/:upperEnrollment/:sportId/:selectivity', 
   })
 })
 router.get('/results/:lowerEnrollment/:upperEnrollment/:sportId/:selectivity/:state', function(req, res, next){
-  Queries.getResults(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity, req.params.state).then(function(results){
+  Queries.getResults(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity, req.params.state.split(".")).then(function(results){
     res.json(results)
   })
 })

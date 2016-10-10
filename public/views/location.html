@@ -11,8 +11,9 @@
         <!-- display interactive us map with different geographical regions -->
       <!-- </select> -->
 
-    <h1 ng-repeat="state in view.selection">{{state}}</h1>
-      <a href="#/results" ng-click="getLocation(view.location)" class="resultsButton"><input class="button-primary" type="submit" value="get results"></a>
+
+    <!-- <h1 ng-repeat="state in view.selection">{{state}}</h1> -->
+      <a href="#/results" ng-hide="view.selection.length===0" ng-click="getLocation(view.selection)" class="resultsButton"><input class="button-primary" type="submit" value="get results"></a>
 
   <!-- </form> -->
 </div>
