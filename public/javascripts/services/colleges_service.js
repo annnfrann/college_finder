@@ -45,4 +45,3 @@ app.factory('colleges_service', function ($http) {
     }
   }
 })
-// these will take in parameters and pass those into the get request
