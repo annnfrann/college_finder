@@ -33,7 +33,7 @@ app.controller('locationController', function($scope, colleges_service){
       "selectedColor": "#1EAEDB",
       "outlineColor": "#666666",
       // "rollOverColor": "#88CAE7",
-      "rollOverColor": "#34b6de",
+      "rollOverColor": "#4abee2",
       "rollOverOutlineColor": "#FFFFFF",
       "selectable": true
     },
