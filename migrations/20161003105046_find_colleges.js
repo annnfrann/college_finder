@@ -21,13 +21,6 @@ exports.up = function(knex, Promise) {
       table.integer('college_id');
       table.integer('sport_id');
     })
-    // knex.schema.createTable('users', function(table){
-    //   table.increments();
-    //   table.string('full_name');
-    //   table.string('email');
-    //   table.string('hashed_password');
-    //   table.boolean('is_admin');
-    // })
   ])
 };
 
