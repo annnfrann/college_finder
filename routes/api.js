@@ -2,11 +2,15 @@ var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex')
 var Queries = require('../lib/queries')
-
-/* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'Express' });
-// });
+var firebase = require("firebase");
+var config = {
+  apiKey: process.env.API_KEY,
+  authDomain: process.env.AUTH_DOMAIN,
+  databaseURL: process.env.DATABASE_URL,
+  storageBucket: process.env.STORAGE_BUCKET,
+  messagingSenderId: process.env.MESSAGING_SENDER_ID
+};
+firebase.initializeApp(config);
 
 router.get('/', function(req, res, next){
   Queries.all().then(function(colleges){
@@ -32,6 +36,32 @@ router.get('/admissions', function(req, res, next){
   Queries.admissions().then(function(admissions){
     res.json(admissions)
   })
+})
+router.get('/signUp/:email/:password', function(req, res, next){
+    firebase.auth().createUserWithEmailAndPassword(req.params.email, req.params.password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+  res.redirect('/#/studentinfo')
+})
+router.get('/signIn/:email/:password', function(req, res, next){
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+  res.redirect('/#/studentinfo')
+})
+router.get('/signOut/:email/:password', function(req, res, next){
+  firebase.auth().signOut().then(function() {
+    // Sign-out successful.
+    res.redirect('/#/')
+    }, function(error) {
+    // An error happened.
+  });
 })
 // router.get('/mensSports', function(req, res, next){
 //   Queries.mensSports().then(function(mensSports){

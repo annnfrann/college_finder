@@ -40,6 +40,9 @@
   text-align: center;
   line-height: 2.75em;
 }
+.signUpForm{
+  margin-top: 0%;
+}
 button{
   background: white;
   opacity: 0.90;
@@ -58,7 +61,10 @@ form{
   margin-left: 5%;
   margin-top: 10%;
 }
-.studentDemos, .studentSport, .studentDivision, .enrollmentSize, .schoolSelectivity, .schoolLocation, .studentResults{
+input{
+  color: #a9a9a9;
+}
+.studentDemos, .studentSport, .studentDivision, .enrollmentSize, .schoolSelectivity, .schoolLocation, .studentResults, .signUp{
   margin-left: 10%;
   margin-top: 6%;
   padding: 1%;
@@ -66,8 +72,6 @@ form{
   width: 75%;
   border-radius: 5%;
   padding: 2%;
-}
-.schoolLocation{
 }
 .opacity1{
   opacity: 0.10;

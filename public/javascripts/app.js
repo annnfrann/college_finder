@@ -8,7 +8,11 @@ app.config(function($routeProvider) {
       })
       .when('/signup', {
         templateUrl: 'views/signup.html',
-        controller: 'annaController'
+        controller: 'signupController'
+      })
+      .when('/signin', {
+        templateUrl: 'views/signin.html',
+        controller: 'signinConroller'
       })
       .when('/studentinfo', {
         // add in an if to handle whether or not someone is signed in

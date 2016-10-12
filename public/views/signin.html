@@ -1,8 +1,8 @@
 <hr>
 <div class="signUp">
-  <h3>sign up:</h3>
-  <br><br>
-  <form class="signUpForm">
+  <br>
+  <h3>sign in:</h3>
+  <form class="signInForm">
     <br>
     <div class="row">
       <div class="six columns">
@@ -13,10 +13,10 @@
     <br>
     <div class="row">
       <div class="six columns">
-        <input ng-model="view.userPass1" type="password" name="name" placeholder="create a password" class="u-full-width">
+        <input ng-model="view.userPass1" type="password" name="name" placeholder="enter your password" class="u-full-width">
       </div>
     </div>
       <br><br><br><br>
-      <a href="#/studentinfo"><input class="button-primary" type="submit" value="next"></a>
+      <a href="#/studentinfo" ng-click="signin(view.usersEmail, view.userPass1)"><input class="button-primary" type="submit" value="next"></a>
   </form>
 </div>

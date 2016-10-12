@@ -25,6 +25,15 @@ app.factory('colleges_service', function ($http) {
     division: function(){
       return $http.get('api/colleges/division')
     },
+    signUp: function(email, password){
+      return $http.get('api/colleges/signUp/' + email + '/' + password)
+    },
+    signIn: function(email, password){
+      return $http.get('api/colleges/signIn/' + email + '/' + password)
+    },
+    signOut: function(email, password){
+      return $http.get('api/colleges/signOut' + email + '/' + password)
+    },
     getSports: function(gender){
       return $http.get('api/colleges/sports/' + gender)
     },
