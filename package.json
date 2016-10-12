@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "ammap3": "github:amcharts/ammap3",
+    "angular-filter": "^0.5.11",
     "angular-ui-router": "^0.3.1",
     "body-parser": "~1.15.1",
     "cookie-parser": "~1.4.3",

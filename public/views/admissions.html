@@ -5,7 +5,10 @@
     <label for="selectivity"></label>
       <select ng-model="view.selectivity" id="selectivity">
         <option value="" disabled selected style="display: none;">how competitive</option>
-        <option ng-repeat="selectivities in view.selectivities | unique:'selectivities'"  value="{{selectivities}}">{{selectivities}}</option>
+        <!-- <option ng-repeat="choices in view.selectivities | unique: 'choices'"  value="{{choices}}">{{choices}}</option> -->
+        <option value="less competetive">less competetive</option>
+        <option value="competetive"> competetive</option>
+        <option value="more competetive"> more competetive</option>
       </select>
       <br><br><br><br>
       <a href="#/location" ng-click="getSelectivity(view.selectivity)"><input class="button-primary" type="submit" value="next"></a>
