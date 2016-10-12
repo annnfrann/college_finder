@@ -29,6 +29,5 @@ exports.down = function(knex, Promise) {
         knex.schema.dropTable('colleges'),
         knex.schema.dropTable('sports'),
         knex.schema.dropTable('college_sports')
-        // knex.schema.dropTable('users')
     ])
 };
