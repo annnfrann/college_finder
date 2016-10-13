@@ -47,4 +47,8 @@ app.config(function($routeProvider) {
         templateUrl: 'views/anna.html',
         controller: 'collegeController'
       })
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'collegeController'
+      })
 });

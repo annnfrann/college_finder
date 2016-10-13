@@ -130,3 +130,12 @@ table{
 hr{
   margin-top: -5%;
 }
+.aboutAnna{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-size: contain;
+  background-image: url("../images/about_me_slide.png");
+}
