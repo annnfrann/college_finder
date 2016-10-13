@@ -1,27 +1,28 @@
 <hr>
 <div class="studentResults">
   <h3>results:</h3>
-  <table class="u-full-width">
-    <thead>
-      <tr>
-        <th>School</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Website</th>
-        <th>Athletics Website</th>
-        <th>Enrollment</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- consider adding an option to save results -->
-      <tr ng-repeat = 'college in view.results'>
-        <td>{{college.college_name}}</td>
-        <td>{{college.city}}</td>
-        <td>{{college.state}}</td>
-        <td><a href={{college.website}}>{{college.website}}</a></td>
-        <td><a href={{college.athletics_website}}>{{college.athletics_website}}</a></td>
-        <td>{{college.enrollment}}</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="holdTheThings">
+    <table class="u-full-width">
+      <thead>
+        <tr>
+          <th>&nbsp;&nbsp;School</th>
+          <th>Location</th>
+          <!-- <th>State</th> -->
+          <th>Website</th>
+          <th>Athletics Website</th>
+          <th>Enrollment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- consider adding an option to save results -->
+        <tr ng-repeat = 'college in view.results'>
+          <td>&nbsp;&nbsp;{{college.college_name}}</td>
+          <td>{{college.city}}, {{college.state}}</td>
+          <td><a href={{college.website}}>{{college.website}}</a></td>
+          <td><a href={{college.athletics_website}}>{{college.athletics_website}}</a></td>
+          <td>{{college.enrollment}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
