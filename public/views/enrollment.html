@@ -1,6 +1,7 @@
 <hr>
 <div class="enrollmentSize">
   <h3>choose your desired enrollment size:</h3>
+  <br><br>
   <form id="enrollmentSize">
     <label for="lowerEnrollment"></label>
       <select ng-model="view.lowerEnrollment" id="lowerEnrollment">
@@ -32,7 +33,7 @@
         <option value=22500>22,500</option>
         <option value=25000>25,000</option>
       </select>
-      <br><br><br><br>
+      <br><br><br>
 
       <p class="alert" ng-show="+view.lowerEnrollment > +view.upperEnrollment">please make sure your smallest school size is less than your largest school size</p>
 

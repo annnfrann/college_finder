@@ -68,10 +68,28 @@ input{
   margin-left: 10%;
   margin-top: 6%;
   padding: 1%;
-  background: gainsboro;
+  background: #a9a9a9;
   width: 75%;
   border-radius: 5%;
   padding: 2%;
+}
+.enrollmentSize{
+  height: 60vh;
+}
+.holdTheThings{
+  margin: 0px auto;
+  width: 95%;
+  height: 75vh;
+  overflow-y: scroll;
+  margin-top: -2%;
+}
+table{
+  font-size: 1.25em;
+  border-radius: 12%;
+}
+td{
+  height: 4.5em;
+  margin-left: 5%;
 }
 .opacity1{
   opacity: 0.10;
@@ -117,6 +135,9 @@ table, th, td, .landingButton{
 table{
   margin-top: 3%;
 }
+tbody{
+  font-size: .75em;
+}
 .resultsButton{
   margin-left: 2%;
   /*margin-top: -10%;*/
@@ -129,4 +150,13 @@ table{
 }
 hr{
   margin-top: -5%;
+}
+.aboutAnna{
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-size: contain;
+  background-image: url("../images/about_me_slide.png");
 }

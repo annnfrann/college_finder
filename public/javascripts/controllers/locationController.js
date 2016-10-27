@@ -25,11 +25,15 @@ app.controller('locationController', function($scope, colleges_service){
     },
     "areasSettings": {
       "autoZoom": false,
-      "color": "#CDCDCD",
-      "colorSolid": "#5EB7DE",
-      "selectedColor": "#5EB7DE",
+      // "color": "#CDCDCD",
+      "color": "#ffffff",
+      // "colorSolid": "#5EB7DE",
+      "colorSolid": "#1EAEDB",
+      // "selectedColor": "#5EB7DE",
+      "selectedColor": "#1EAEDB",
       "outlineColor": "#666666",
-      "rollOverColor": "#88CAE7",
+      // "rollOverColor": "#88CAE7",
+      "rollOverColor": "#4abee2",
       "rollOverOutlineColor": "#FFFFFF",
       "selectable": true
     },
@@ -57,7 +61,7 @@ app.controller('locationController', function($scope, colleges_service){
         $scope.view.selection = states.join('.');
 
         $scope.$apply(function(){
-            console.log(`Selected ${$scope.view.selection}`);
+            // console.log(`Selected ${$scope.view.selection}`);
         });
         return states;
       }
