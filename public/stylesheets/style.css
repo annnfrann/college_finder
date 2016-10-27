@@ -79,6 +79,9 @@ input{
 .holdTheThings{
   margin: 0px auto;
   width: 95%;
+  height: 75vh;
+  overflow-y: scroll;
+  margin-top: -2%;
 }
 table{
   font-size: 1.25em;
@@ -131,6 +134,9 @@ table, th, td, .landingButton{
 }
 table{
   margin-top: 3%;
+}
+tbody{
+  font-size: .75em;
 }
 .resultsButton{
   margin-left: 2%;
