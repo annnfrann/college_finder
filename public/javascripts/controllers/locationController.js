@@ -7,7 +7,6 @@ app.controller('locationController', function($scope, colleges_service){
   $scope.view.selection = [];
 
   $scope.getLocation = function(location){
-    // could eventually do a thing where colleges_service.studentParameters.state is an array, and you just push the values into it
     colleges_service.studentParameters.state = location
   }
 
