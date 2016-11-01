@@ -31,14 +31,18 @@
   margin-right: 3%;
   color: white;
 }
-.title{
+.title, .title2{
   color: white;
   font-family: "collegefont";
   font-size: 9em;
   width: 100%;
-  margin-left: 5%;
   text-align: center;
-  line-height: 2.75em;
+}
+.title{
+  margin-left: 5%;
+}
+.title2{
+  margin-top: -10%;
 }
 .signUpForm{
   margin-top: 0%;
@@ -61,8 +65,11 @@ form{
   margin-left: 5%;
   margin-top: 10%;
 }
-input{
+input, option{
   color: #a9a9a9;
+}
+option{
+  margin-bottom: 1%;
 }
 .studentDemos, .studentSport, .studentDivision, .enrollmentSize, .schoolSelectivity, .schoolLocation, .studentResults, .signUp{
   margin-left: 10%;
@@ -79,7 +86,7 @@ input{
 .holdTheThings{
   margin: 0px auto;
   width: 95%;
-  height: 75vh;
+  height: 70vh;
   overflow-y: scroll;
   margin-top: -2%;
 }
@@ -97,6 +104,13 @@ td{
 }
 #sport, #division, #enrollment, #selectivity, #location, #results{
   margin-top: 10%;
+}
+#selectivity{
+  margin-top: 5%;
+  height: 35%;
+}
+.button-primary{
+  margin-right: 1%;
 }
 .opacity2{
   opacity: 0.20;

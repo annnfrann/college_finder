@@ -3,7 +3,7 @@
   <h3>choose your desired admissions selectivity:</h3>
   <form id="schoolSelectivity">
     <label for="selectivity"></label>
-      <select ng-model="view.selectivity" id="selectivity">
+      <select ng-model="view.selectivity" id="selectivity" multiple>
         <option value="" disabled selected style="display: none;">how competitive</option>
         <!-- <option ng-repeat="choices in view.selectivities | unique: 'choices'"  value="{{choices}}">{{choices}}</option> -->
         <option value="Least Competitive">least competitive</option>
@@ -12,7 +12,9 @@
         <option value="More Competitive"> more competitive</option>
         <option value="Highly Competitive"> highly competitive</option>
       </select>
-      <br><br><br><br>
+      <h6>to select multiple options, hold down ctrl/command</h6>
+      <br><br><br>
       <a href="#/location" ng-click="getSelectivity(view.selectivity)"><input class="button-primary" type="submit" value="next"></a>
+      <a href="#/enrollment"><input class="button-primary" type="submit" value="back"></a>
   </form>
 </div>
