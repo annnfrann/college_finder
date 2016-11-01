@@ -99,12 +99,13 @@ router.get('/selectivity/:lowerEnrollment/:upperEnrollment/:sportId', function(r
   })
 })
 router.get('/location/:lowerEnrollment/:upperEnrollment/:sportId/:selectivity', function(req, res, next){
-  Queries.getLocation(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity).then(function(locations){
+  Queries.getLocation(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity.split(".")).then(function(locations){
+    console.log(locations);
     res.json(locations)
   })
 })
 router.get('/results/:lowerEnrollment/:upperEnrollment/:sportId/:selectivity/:state', function(req, res, next){
-  Queries.getResults(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity, req.params.state.split(".")).then(function(results){
+  Queries.getResults(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity.split("."), req.params.state.split(".")).then(function(results){
     res.json(results)
   })
 })

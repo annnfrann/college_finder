@@ -3,7 +3,7 @@
   <h3>select your division:</h3>
   <form id="studentDivision">
     <label for="division"></label>
-      <select ng-model="view.chosenDivision" id="division" multiple>
+      <select ng-model="view.chosenDivision" id="division">
         <option value="" disabled selected style="display: none;">select your division</option>
         <option ng-repeat="division in view.divisions | unique: 'division'" value="{{division.id}}">{{division.division}}</option>
       </select>

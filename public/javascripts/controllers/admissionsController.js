@@ -6,6 +6,6 @@ app.controller('admissionsController', function($scope, colleges_service){
   })
 
   $scope.getSelectivity = function(selectivity){
-    colleges_service.studentParameters.selectivity = selectivity
+    colleges_service.studentParameters.selectivity = selectivity.join('.')
   }
 })
