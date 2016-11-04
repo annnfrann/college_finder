@@ -56,11 +56,9 @@ app.controller('locationController', function($scope, colleges_service){
             states.push( area.title );
           }
         }
-        //console.log(states);
         $scope.view.selection = states.join('.');
 
         $scope.$apply(function(){
-            // console.log(`Selected ${$scope.view.selection}`);
         });
         return states;
       }

@@ -100,7 +100,6 @@ router.get('/selectivity/:lowerEnrollment/:upperEnrollment/:sportId', function(r
 })
 router.get('/location/:lowerEnrollment/:upperEnrollment/:sportId/:selectivity', function(req, res, next){
   Queries.getLocation(req.params.lowerEnrollment, req.params.upperEnrollment, req.params.sportId, req.params.selectivity.split(".")).then(function(locations){
-    console.log(locations);
     res.json(locations)
   })
 })
